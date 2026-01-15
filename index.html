@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Louis - Développeur Web">
+    <title>Portfolio de Louis</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome pour les icônes (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Louis<span>.Dev</span></div>
+        <nav class="navbar">
+            <button class="nav-toggle" aria-label="Ouvrir le menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item active" data-tab="home">Accueil</a></li>
+                <li><a href="#studies" class="nav-item" data-tab="studies">Études</a></li>
+                <li><a href="#skills" class="nav-item" data-tab="skills">Compétences</a></li>
+                <li><a href="#experience" class="nav-item" data-tab="experience">Expériences</a></li>
+                <li><a href="#cv" class="nav-item" data-tab="cv">Mon CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <!-- Section Accueil -->
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <h1>Bonjour, je suis <span class="highlight">Louis</span></h1>
+                <p class="subtitle">Apprentit en BUT GEII</p>
+                <p class="description">Bienvenue sur mon portfolio. Je suis actuellement en BUT GEII à l'IUT de l'Aisne, 
+                    Cuffies/Soissons. Spécialisation en ESE (électronique et systèmes embarqués).</p>
+                <button class="cta-button" onclick="document.querySelector('[data-tab=\'experience\']').click()">Découvrir mon travail</button>
+            </div>
+        </section>
+
+        <!-- Section Études -->
+        <section id="studies" class="tab-content">
+            <h2><i class="fas fa-graduation-cap"></i> Mes Études</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">2023 - Présent</div>
+                    <div class="content">
+                        <h3>Master Développement Web</h3>
+                        <p>Université de Technologie</p>
+                        <p>Spécialisation en architecture logicielle et UX Design.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2020 - 2023</div>
+                    <div class="content">
+                        <h3>Licence Informatique</h3>
+                        <p>Université des Sciences</p>
+                        <p>Bases solides en algorithmique, bases de données et programmation orientée objet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences & Portfolio -->
+        <section id="skills" class="tab-content">
+            <h2><i class="fas fa-laptop-code"></i> Mes Compétences & Projets</h2>
+            
+            <div class="skills-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Placeholder image (gris) -->
+                        <div class="img-placeholder"><i class="fas fa-image"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Site E-commerce</h3>
+                        <p>Développement d'une boutique en ligne complète avec panier et paiement.</p>
+                        <div class="tech-stack">
+                            <span>React</span><span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="img-placeholder"><i class="fas fa-mobile-alt"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>App Mobile Météo</h3>
+                        <p>Application donnant la météo en temps réel via une API externe.</p>
+                        <div class="tech-stack">
+                            <span>React Native</span><span>API REST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="img-placeholder"><i class="fas fa-database"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Admin</h3>
+                        <p>Interface d'administration pour la gestion des utilisateurs et des données.</p>
+                        <div class="tech-stack">
+                            <span>Vue.js</span><span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Expériences -->
+        <section id="experience" class="tab-content">
+            <h2><i class="fas fa-briefcase"></i> Expériences en Entreprise</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>stage programmation informatique</h3>
+                        <span class="company">Ezyperf</span>
+                    </div>
+                    <span class="period">2018</span>
+                    <p>Apprentissage des langage de programmation (HTML, CSS, JavaScript, PHP, SQL)</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Alternant ERA (electricité, régulation, automatisme)</h3>
+                        <span class="company">Cristal Union</span>
+                    </div>
+                    <span class="period">2024 - Present</span>
+                    <p>programmation et supervision industriellez pour projet neuf et existant</p>
+                    <div class="tags">
+                        <span>Structured Text</span><span>Ladder </span><span>Grafcet</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Mon CV -->
+        <section id="cv" class="tab-content">
+            <div class="cv-container">
+                <h2><i class="fas fa-file-pdf"></i> Mon Curriculum Vitae</h2>
+                <p>Vous souhaitez en savoir plus sur mon parcours et mes compétences ? Téléchargez mon CV complet au format PDF.</p>
+                
+                <div class="download-area">
+                    <div class="file-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <a href="CV_Louis.pdf" class="download-btn" download>
+                        <span>Télécharger CV_Louis.pdf</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Louis. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/the_papmemousse22/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/courtoislouis/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:louis.courtois22@gmail.com" aria-label="Gmail"><i class="fab fa-google"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
